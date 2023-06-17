@@ -13,6 +13,7 @@ function ListSupplier() {
 
 	const [data, setData] = useState([]);
 
+
 	useEffect(()=>{
         fetchData() 
 		$(document).ready(function () {
@@ -27,6 +28,7 @@ function ListSupplier() {
 		.then(res => setData(res.data))
 		.catch(err => console.log(err));
     }
+	
 
 	const handleDelete = async (id) => {
         const isConfirm = await Swal.fire({

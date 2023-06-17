@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import LayoutAdmin from '../layout/LayoutAdmin'
 import LayoutGudang from '../layout/LayoutGudang'
+import LayoutUser from '../layout/LayoutUser'
 import axios from 'axios'
 
 function Home() {
@@ -31,6 +32,7 @@ function Home() {
     <div class="wrapper">
 		{role === "admin" && <LayoutAdmin />}
         {role === "gudang" && <LayoutGudang />}
+		{role === "user" && <LayoutUser />}
         
         <div class="main-panel">
 			<div class="content">
@@ -62,7 +64,7 @@ function Home() {
 							<div class="card">
 								<div class="card-body">
 									<center>
-										<h2><strong>SISTEM INVENTORY ASALOLE</strong></h2><br/>
+										<h2><strong>SISTEM INVENTORY KPK</strong></h2><br/>
 										<h3><strong>SELAMAT DATANG ({nama_user})</strong></h3>
 									</center>
 								</div>

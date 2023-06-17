@@ -106,6 +106,7 @@ function ListBarang() {
 													<th>Barang</th>
 													<th>Stok</th>
 													<th>Harga</th>
+													<th>Deskripsi</th>
 													<th>Action</th>
 												</tr>
 											</thead>
@@ -116,6 +117,7 @@ function ListBarang() {
 													<td>{row.nama_barang}</td>
 													<td>{row.stok} Pcs</td>
 													<td>Rp. {row.harga.toLocaleString()}</td>
+													<td>{row.deskripsi}</td>
 													<td>
 														<Link to={`/editBarang/${row.id}`} className='btn btn-xs btn-primary'><i className='fa fa-edit'></i> Edit</Link> &nbsp;
 														<button onClick={()=>handleDelete(row.id)} className='btn btn-xs btn-danger'><i className='fa fa-trash'></i> Hapus</button>

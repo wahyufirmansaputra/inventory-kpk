@@ -39,6 +39,8 @@ import LaporanBarangKeluar from './pages/laporan/LaporanBarangKeluar'
 import CetakAllBarangMasuk from './pages/laporan/CetakAllBarangMasuk'
 import CetakAllBarangKeluar from './pages/laporan/CetakAllBarangKeluar'
 
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -89,6 +91,9 @@ function App() {
             <Route path='/laporanbarangkeluar' element={<LaporanBarangKeluar />}></Route>
             <Route path='/cetakallbarangmasuk' element={<CetakAllBarangMasuk />}></Route>
             <Route path='/cetakallbarangkeluar' element={<CetakAllBarangKeluar />}></Route>
+
+            
+            
         </Routes>
     </BrowserRouter>
   )

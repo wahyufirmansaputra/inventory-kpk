@@ -89,6 +89,7 @@ function CreateUser() {
 											<option value="" hidden>-- Pilih Role --</option>
 											<option value="admin">Admin</option>
 											<option value="gudang">Gudang</option>
+											<option value="user">User</option>
 										</select>
 									</div>
 								</div>
